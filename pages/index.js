@@ -33,7 +33,7 @@ export default function Home() {
 
       <div className="w-full">
         <div className="flex flex-col justify-center max-w-xs mx-auto bg-white shadow-xl rounded-xl p-5">
-          <div className="w-32 h-32 mx-auto shadow-xl rounded-full">
+          <div className="w-32 h-32 mx-auto shadow-xl rounded-full mt-3">
             <Image src="/profil.jpg" width="128" height="128" className="rounded-full" alt="Muhammad Zulfi Izzulhaq" />
           </div>
           <div className="text-center mt-5">
