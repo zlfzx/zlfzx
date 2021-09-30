@@ -10,6 +10,11 @@ import { FaLaravel } from 'react-icons/fa';
 import { FaReact } from 'react-icons/fa';
 import { FaCode } from 'react-icons/fa';
 
+// import Carousel from '@brainhubeu/react-carousel';
+import dynamic from 'next/dynamic';
+const MyCarousel = dynamic(() => import('../components/MyCarousel'), { ssr: false })
+import '@brainhubeu/react-carousel/lib/style.css';
+
 export default function Home() {
   return (
     <div className="flex justify-center items-center min-h-screen py-10 px-3 sm:px-5 bg-gray-100">
@@ -31,8 +36,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="w-full">
-        <div className="flex flex-col justify-center max-w-xs mx-auto bg-white shadow-xl rounded-xl p-5">
+      <div className="w-full h-4/6">
+        <MyCarousel/>
+        {/* <div className="flex flex-col justify-center max-w-xs mx-auto bg-white shadow-xl rounded-xl p-5">
           <div className="w-32 h-32 mx-auto shadow-xl rounded-full mt-3">
             <Image src="/profil.jpg" width="128" height="128" className="rounded-full" alt="Muhammad Zulfi Izzulhaq" />
           </div>
@@ -58,7 +64,7 @@ export default function Home() {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* <div className="flex flex-col sm:flex-row align-center justify-center max-w-2xl mx-auto mt-8">

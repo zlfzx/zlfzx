@@ -18,3 +18,18 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.BrainhubCarouselItem {
+  padding-top: 40px;
+  opacity: 35%;
+}
+
+.BrainhubCarouselItem--active {
+  z-index: 999;
+  /* padding: 0 !important; */
+  padding-bottom: 40px;
+  opacity: 100% !important;
+}
+.BrainhubCarouselItem--active > div {
+  height: 100%;
+}
