@@ -17,7 +17,7 @@ import '@brainhubeu/react-carousel/lib/style.css';
 
 export default function Home() {
   return (
-    <div className="flex justify-center items-center min-h-screen py-10 px-3 sm:px-5 bg-gray-100">
+    <div className="flex justify-center items-center min-h-screen py-10 bg-gray-100">
 
       <Head>
         <title>Muhammad Zulfi Izzulhaq</title>

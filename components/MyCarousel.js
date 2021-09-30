@@ -32,7 +32,7 @@ export default function MyCarousel() {
         },
       ]}
     >
-      <div className="flex flex-col justify-center max-w-md mx-auto bg-white shadow-xl rounded-xl p-5 border-2 border-gray-50">
+      <div className="flex flex-col justify-center w-80 mx-auto bg-white shadow-xl rounded-xl p-5 border-2 border-gray-50">
         <div className="w-32 h-32 mx-auto shadow-xl rounded-full mt-3">
           <Image src="/profil.jpg" width="128" height="128" className="rounded-full" alt="Muhammad Zulfi Izzulhaq" />
         </div>
@@ -67,7 +67,7 @@ export default function MyCarousel() {
         </div>
       </div>
 
-      <div className="flex flex-col justify-center max-w-md mx-auto bg-white shadow-xl rounded-xl p-5 border-2 border-gray-50">
+      <div className="flex flex-col justify-center w-80 mx-auto bg-white shadow-xl rounded-xl p-5 border-2 border-gray-50">
         <FaLaravel className="text-4xl mx-auto inline-block" />
         <div className="text-center mt-5">
           <p className="text-xl sm:text-2xl font-semibold text-gray-900">Laravel</p>
@@ -75,7 +75,7 @@ export default function MyCarousel() {
         </div>
       </div>
 
-      <div className="flex flex-col justify-center max-w-md mx-auto bg-white shadow-xl rounded-xl p-5 border-2 border-gray-50">
+      <div className="flex flex-col justify-center w-80 mx-auto bg-white shadow-xl rounded-xl p-5 border-2 border-gray-50">
         <FaCode className="text-4xl mx-auto inline-block" />
         <div className="text-center mt-5">
           <p className="text-xl sm:text-2xl font-semibold text-gray-900">Backend Developer</p>
