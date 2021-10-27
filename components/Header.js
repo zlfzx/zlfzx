@@ -27,7 +27,7 @@ export default function Header() {
                             Contact
                         </a>
                     </nav>
-                    <button className="lg:hidden flex flex-col ml-4">
+                    <button className="lg:hidden flex flex-col ml-4" aria-label="Menu">
                         <span className="w-6 h-1 bg-gray-800 dark:bg-white mb-1">
                         </span>
                         <span className="w-6 h-1 bg-gray-800 dark:bg-white mb-1">
