@@ -10,10 +10,7 @@ import { FaLaravel } from 'react-icons/fa';
 import { FaReact } from 'react-icons/fa';
 import { FaCode } from 'react-icons/fa';
 
-// import Carousel from '@brainhubeu/react-carousel';
-import dynamic from 'next/dynamic';
-const MyCarousel = dynamic(() => import('../components/MyCarousel'), { ssr: false })
-import '@brainhubeu/react-carousel/lib/style.css';
+import Header from '../components/Header';
 
 export default function Home() {
   return (
@@ -36,8 +33,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <Header/>
       <div className="flex flex-col justify-center items-center h-screen py-10 bg-gray-100">
-        <h1 className="text-5xl font-bold font-mono text-gray-900 antialiased animate-pulse">Hello World!</h1>
+        <h1 className="text-5xl font-bold font-poppins text-gray-900 antialiased animate-pulse">Hello World!</h1>
       </div>
 
     </div>
