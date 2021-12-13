@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function Header() {
 
     return (
@@ -14,18 +16,18 @@ export default function Header() {
                 </div>
                 <div className="flex items-center">
                     <nav className="font-poppins font-medium text-gray-700 dark:text-white text-lg lg:flex items-center hidden">
-                        <a href="#" className="font-bold py-2 px-6 flex hover:text-black">
+                        <Link href="/" className="font-bold py-2 px-6 flex hover:text-black">
                             Home
-                        </a>
-                        <a href="#" className="py-2 px-6 flex hover:text-black">
+                        </Link>
+                        <a href="/cv.pdf" className="py-2 px-6 flex hover:text-black">
                             Resume
                         </a>
-                        <a href="#" className="py-2 px-6 flex hover:text-black">
+                        <a href="https://zulfizz.my.id/portofolio" className="py-2 px-6 flex hover:text-black" target="_blank" rel="noreferrer">
                             Portofolio
                         </a>
-                        <a href="#" className="py-2 px-6 flex hover:text-black">
+                        <Link href="/contact" className="py-2 px-6 flex hover:text-black">
                             Contact
-                        </a>
+                        </Link>
                     </nav>
                     <button className="lg:hidden flex flex-col ml-4" aria-label="Menu">
                         <span className="w-6 h-1 bg-gray-800 dark:bg-white mb-1">
