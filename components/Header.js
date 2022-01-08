@@ -26,9 +26,11 @@ export default function Header() {
                             Home
                             </a>
                         </Link>
-                        <a href="https://zulfizz.my.id/portofolio" className="py-2 px-6 flex hover:text-black" target="_blank" rel="noreferrer">
-                            Portofolio
-                        </a>
+                        <Link href="/project">
+                            <a className={router.pathname == '/project' ? linkActive : link}>
+                                Poject
+                            </a>
+                        </Link>
                         <Link href="/cv.pdf">
                             <a className="py-2 px-6 flex hover:text-black">
                             Resume

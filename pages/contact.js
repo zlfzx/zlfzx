@@ -7,20 +7,7 @@ export default function Contact() {
     return (
         <div className="bg-gray-100">
             <Head>
-                <title>Muhammad Zulfi Izzulhaq</title>
-                <meta name="description" content="Web Developer" />
-                <meta name="keywords" content="developer,engineer,software,backend,frontend,laravel,react,vue" />
-                <meta name="robots" content="index, follow" />
-                <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
-                <meta name="language" content="English" />
-                <meta name="author" content="Muhammad Zulfi Izzulhaq" />
-
-                <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://zlfzz.me/" />
-                <meta property="og:title" content="Muhammad Zulfi Izzulhaq" />
-                <meta property="og:description" content="Web Developer" />
-
-                <link rel="icon" href="/favicon.ico" />
+                <title>Contact - Muhammad Zulfi Izzulhaq</title>
             </Head>
 
             <Header />
