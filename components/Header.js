@@ -1,6 +1,11 @@
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 export default function Header() {
+
+    const router = useRouter()
+    const link = 'py-2 px-6 flex hover:text-black'
+    const linkActive = 'py-2 px-6 flex hover:text-black font-bold'
 
     return (
         <header className="h-16 sm:h-20 flex items-center z-30 w-full">
@@ -16,17 +21,23 @@ export default function Header() {
                 </div>
                 <div className="flex items-center">
                     <nav className="font-poppins font-medium text-gray-700 dark:text-white text-lg lg:flex items-center hidden">
-                        <Link href="/" className="font-bold py-2 px-6 flex hover:text-black">
+                        <Link href="/">
+                            <a className={router.pathname == '/' ? linkActive : link}>
                             Home
+                            </a>
                         </Link>
-                        <a href="/cv.pdf" className="py-2 px-6 flex hover:text-black">
-                            Resume
-                        </a>
                         <a href="https://zulfizz.my.id/portofolio" className="py-2 px-6 flex hover:text-black" target="_blank" rel="noreferrer">
                             Portofolio
                         </a>
-                        <Link href="/contact" className="py-2 px-6 flex hover:text-black">
+                        <Link href="/cv.pdf">
+                            <a className="py-2 px-6 flex hover:text-black">
+                            Resume
+                            </a>
+                        </Link>
+                        <Link href="/contact">
+                            <a className={router.pathname == '/contact' ? linkActive : link}>
                             Contact
+                            </a>
                         </Link>
                     </nav>
                     <button className="lg:hidden flex flex-col ml-4" aria-label="Menu">
@@ -41,4 +52,69 @@ export default function Header() {
             </div>
         </header>
     )
+
+    // return (
+    //     <header>
+    //         <nav className="bg-white dark:bg-gray-800 shadow ">
+    //             <div className="max-w-7xl mx-auto px-8">
+    //                 <div className="flex items-center justify-between h-16">
+    //                     <div className=" flex items-center">
+    //                         <div className="hidden md:block">
+    //                             <div className="ml-10 flex items-baseline space-x-4">
+    //                                 <Link className="text-gray-300  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium" href="/#">
+    //                                     Home
+    //                                 </Link>
+    //                                 <Link className="text-gray-800 dark:text-white  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium" href="/#">
+    //                                     Gallery
+    //                                 </Link>
+    //                                 <Link className="text-gray-300  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium" href="/#">
+    //                                     Content
+    //                                 </Link>
+    //                                 <Link className="text-gray-300  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium" href="/#">
+    //                                     Contact
+    //                                 </Link>
+    //                             </div>
+    //                         </div>
+    //                     </div>
+    //                     <div className="block">
+    //                         <div className="ml-4 flex items-center md:ml-6">
+    //                         </div>
+    //                     </div>
+    //                     <div className="-mr-2 flex md:hidden">
+    //                         <button className="text-gray-800 dark:text-white hover:text-gray-300 inline-flex items-center justify-center p-2 rounded-md focus:outline-none">
+    //                             <svg width="20" height="20" fill="currentColor" className="h-8 w-8" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+    //                                 <path d="M1664 1344v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45z">
+    //                                 </path>
+    //                             </svg>
+    //                         </button>
+    //                     </div>
+    //                 </div>
+    //             </div>
+    //             <div className="md:hidden">
+    //                 <div className="container mx-auto px-6 pt-2 pb-3 space-y-1 sm:px-3 text-right">
+    //                     <Link href="/">
+    //                         <a className="text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+    //                         Home
+    //                         </a>
+    //                     </Link>
+    //                     <Link href="/">
+    //                         <a className="text-gray-800 dark:text-white block px-3 py-2 rounded-md text-base font-medium">
+    //                         Gallery
+    //                         </a>
+    //                     </Link>
+    //                     <Link href="/">
+    //                         <a className="text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+    //                         Content
+    //                         </a>
+    //                     </Link>
+    //                     <Link href="/">
+    //                         <a className="text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+    //                         Contact
+    //                         </a>
+    //                     </Link>
+    //                 </div>
+    //             </div>
+    //         </nav>
+    //     </header>
+    // )
 }
