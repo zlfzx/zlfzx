@@ -7,6 +7,8 @@ export default function Project() {
     const projects = [
         {
             name: 'Ujian CBT SMK',
+            platform: 'Web',
+            role: 'Fullstack',
             description:
                 'Aplikasi ujian berbasis web untuk jenjang SMK dengan framework Codeigniter 3',
             image: 'ujian.jpeg',
@@ -16,6 +18,8 @@ export default function Project() {
         },
         {
             name: 'E-Voting',
+            platform: 'Web',
+            role: 'Fullstack',
             description:
                 'Aplikasi voting berbasis web dengan framework Codeigniter 3',
             image: 'evoting.jpeg',
@@ -25,6 +29,8 @@ export default function Project() {
         },
         {
             name: 'Bobola App',
+            platform: 'Web',
+            role: 'Frontend',
             description:
                 'Aplikasi Klasemen Liga Inggris berbasis PWA (Progressive Web Application)',
             image: 'bobola.png',
@@ -35,6 +41,8 @@ export default function Project() {
         },
         {
             name: 'Nyateti',
+            platform: 'Web',
+            role: 'Frontend',
             description:
                 'Sebuah aplikasi yang memiliki fitur catatan pribadi, todo list, kalender, dan pencatat kegiatan rutin. Dibuat menggunakan VueJS dan Firebase',
             image: 'nyateti.png',
@@ -45,6 +53,8 @@ export default function Project() {
         },
         {
             name: 'Materi Ajar dan Ujian',
+            platform: 'Web',
+            role: 'Fullstack',
             description:
                 'Aplikasi ini akan memfasilitasi guru untuk membuat, menyimpan, menyebarkan, dan memanfaatkan materi ajar dan soal ujian, sesuai dengan kebutuhan.',
             image: 'mau.png',
@@ -54,6 +64,8 @@ export default function Project() {
         },
         {
             name: 'News Schoolmedia',
+            platform: 'Web',
+            role: 'Fullstack',
             description:
                 'Website portal berita yang didalamnya juga memuat seputar dunia pendidikan Indonesia',
             image: 'news.png',
@@ -63,6 +75,8 @@ export default function Project() {
         },
         {
             name: 'CMS Sekolah',
+            platform: 'Web',
+            role: 'Fullstack',
             description:
                 'Website CMS untuk sekolah berbasis SaaS yang penggunanya tersebar hampir diseluruh Indonesia',
             image: 'cms.png',
@@ -77,6 +91,8 @@ export default function Project() {
         },
         {
             name: 'Manajemen CMS Sekolah',
+            platform: 'Web',
+            role: 'Fullstack',
             description: 'Aplikasi untuk manajemen semua client',
             image: 'admincms.png',
             tags: ['Laravel', 'Bootstrap', 'Javascript', 'Fullstack'],
@@ -84,6 +100,8 @@ export default function Project() {
         },
         {
             name: 'User Management',
+            platform: 'Web',
+            role: 'Backend',
             description:
                 'Aplikasi yang digunakan sekolah untuk manajemen user baik guru, siswa, orang tua/wali, serta mengatur penugasan dan jawal pelajaran.',
             image: 'um.png',
@@ -92,13 +110,18 @@ export default function Project() {
         },
         {
             name: 'Njajan',
+            platform: 'Android',
+            // role: 'Fullstack',
             description: 'Aplikasi catatan pengeluaran sederhana',
             image: 'njajan.png',
+            source: 'https://github.com/zulfizz/njajan',
             tags: ['Android', 'Kotlin', 'Room'],
             status: true,
         },
         {
             name: 'Shipstock',
+            platform: 'Web',
+            role: 'Fullstack',
             description: 'Aplikasi managemen sparepart kapal',
             image: 'shipstock.png',
             tags: ['Laravel', 'Bootstrap', 'MySQL', 'Backend'],
@@ -124,11 +147,21 @@ export default function Project() {
                                 </div>
                                 <div className="lg:max-w-2xl">
                                     <p className="text-base leading-6 text-indigo-500 font-semibold uppercase">
-                                        Apps
+                                        {item.platform} {!!item.role ? '- ' + item.role : ''}
                                     </p>
                                     <h4 className="mt-2 text-2xl leading-8 font-extrabold text-gray-900 dark:text-white sm:text-3xl sm:leading-9">
                                         {item.name}
                                     </h4>
+                                    
+                                    <div className="my-4">
+                                        {!!item.preview ? <a href={`${item.preview}`} target="_blank" rel="noreferrer" className=" px-3 py-1 text-xs transition ease-in duration-200 uppercase rounded-full hover:bg-gray-800 hover:text-white border-2 border-gray-900 focus:outline-none mr-2">
+                                            Preview
+                                        </a> : ''}
+                                        {!!item.source ? <a href={`${item.source}`} target="_blank" rel="noreferrer" className=" px-3 py-1 text-xs transition ease-in duration-200 uppercase rounded-full hover:bg-gray-800 hover:text-white border-2 border-gray-900 focus:outline-none">
+                                            Source Code
+                                        </a> : ''}
+                                    </div>
+
                                     <p className="mt-4 text-lg leading-6 text-gray-500 dark:text-gray-300">
                                         {item.description}
                                     </p>
