@@ -23,8 +23,6 @@ export default function Home() {
         <meta property="og:url" content="https://zlfzz.me/" />
         <meta property="og:title" content="Muhammad Zulfi Izzulhaq" />
         <meta property="og:description" content="I'm Muhammad Zulfi Izzulhaq, Backend Developer from Pekalongan, Indonesia" />
-
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Header/>
