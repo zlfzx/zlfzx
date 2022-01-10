@@ -152,7 +152,7 @@ export default function Project() {
     return (
         <div className="bg-white">
             <Head>
-                <title>Project - Muhammad Zulfi Izzulhaq</title>
+                <title>Projects - Muhammad Zulfi Izzulhaq</title>
             </Head>
             <Header />
 
@@ -212,8 +212,11 @@ export default function Project() {
                                 </div>
                             </div>
                         })}
-
-
+                    </div>
+                    <div className="flex justify-center mb-16">
+                        <a href="https://github.com/zulfizz" target="_blank" rel="noreferrer" className="font-poppins px-6 py-2 transition ease-in duration-200 uppercase rounded-full hover:bg-gray-800 hover:text-white border-2 border-gray-900 focus:outline-none mr-5">More Project</a>
+                        
+                        <a href="/cv.pdf" target="_blank" rel="noreferrer" className="font-poppins px-6 py-2 duration-200 uppercase rounded-full bg-gray-800 text-white">My Resume</a>
                     </div>
                 </div>
             </div>

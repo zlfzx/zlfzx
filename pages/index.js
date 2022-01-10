@@ -37,7 +37,7 @@ export default function Home() {
           Experienced as a Laravel Backend Developer for 2 years and interested in web development using PHP and Javascript Language. Based on this experience, I was able to adapt to the culture of working in a team or individually and build a character who is quick to learn new things.
           </p>
           <Link href="/project">
-            <a className="mt-6 px-6 py-2 transition ease-in duration-200 uppercase rounded-full hover:bg-gray-800 hover:text-white border-2 border-gray-900 focus:outline-none">See My Project</a>
+            <a className="font-poppins mt-6 px-6 py-2 transition ease-in duration-200 uppercase rounded-full hover:bg-gray-800 hover:text-white border-2 border-gray-900 focus:outline-none">See My Project</a>
           </Link>
         </div>
         <FrontPageAnimation />

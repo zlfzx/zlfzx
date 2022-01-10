@@ -28,7 +28,7 @@ export default function Header() {
                         </Link>
                         <Link href="/project">
                             <a className={router.pathname == '/project' ? linkActive : link}>
-                                Poject
+                                Project
                             </a>
                         </Link>
                         <Link href="/cv.pdf">
