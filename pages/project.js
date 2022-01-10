@@ -119,14 +119,34 @@ export default function Project() {
             status: true,
         },
         {
-            name: 'Shipstock',
+            name: 'MyPapilio Hotel Reservation App',
+            platform: 'Android | Web',
+            role: 'Backend',
+            description: 'Aplikasi pemesanan hotel Best Western Papilio Surabaya',
+            image: 'mypapilio.png',
+            preview: 'https://play.google.com/store/apps/details?id=com.bw.mypapilio',
+            tags: ['React Native', 'Laravel', 'MySQL'],
+            status: true
+        },
+        {
+            name: 'Materi Schoolmedia',
             platform: 'Web',
             role: 'Fullstack',
-            description: 'Aplikasi managemen sparepart kapal',
-            image: 'shipstock.png',
-            tags: ['Laravel', 'Bootstrap', 'MySQL', 'Backend'],
-            status: true,
-        },
+            description: 'Sebuah aplikasi untuk mencari dan bermacam materi dan media pembelajaran sesuai jenjang pendidikan.',
+            image: 'materi.png',
+            preview: 'https://materi.schoolmedia.id',
+            tags: ['Laravel', 'PostgreSQL', 'Bootstrap 4'],
+            status: true
+        }
+        // {
+        //     name: 'Shipstock',
+        //     platform: 'Web',
+        //     role: 'Fullstack',
+        //     description: 'Aplikasi managemen sparepart kapal',
+        //     image: 'shipstock.png',
+        //     tags: ['Laravel', 'Bootstrap', 'MySQL', 'Backend'],
+        //     status: true,
+        // },
     ]
 
     return (
@@ -137,13 +157,13 @@ export default function Project() {
             <Header />
 
             <div className="w-full grid sm:grid-cols-1 px-12">
-                <div className="container mx-auto pt-12">
+                <div className="container mx-auto pt-16">
                     <div className="relative p-4">
 
                         {projects.reverse().map(function (item, index) {
                             return <div key={index} className="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-12 lg:items-start my-8 p-8">
                                 <div className="relative px-12 mb-4 w-full h-auto">
-                                    <Image src={'/projects/' + item.image} alt={item.name} width={550} height={300} quality={100} className="mx-auto shadow-lg rounded" />
+                                    <Image src={'/projects/' + item.image} alt={item.name} width={550} height={300} quality={100} className="mx-auto shadow-lg rounded-lg" />
                                 </div>
                                 <div className="lg:max-w-2xl">
                                     <p className="text-base leading-6 text-indigo-500 font-semibold uppercase">
