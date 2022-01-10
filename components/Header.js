@@ -8,7 +8,7 @@ export default function Header() {
     const linkActive = 'py-2 px-6 flex hover:text-black font-bold'
 
     return (
-        <header className="h-16 sm:h-20 flex items-center z-30 w-full">
+        <header className="h-16 sm:h-20 flex items-center z-30 w-full absolute">
             <div className="container mx-auto px-6 flex items-center justify-between">
                 <div className="text-gray-700 dark:text-white font-medium text-3xl flex items-center">
                     <svg width="25" height="25" viewBox="0 0 1792 1792" fill="currentColor" xmlns="http://www.w3.org/2000/svg">

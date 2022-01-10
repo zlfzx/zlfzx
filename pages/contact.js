@@ -5,7 +5,7 @@ import QRCode from '../public/qrcode.png'
 
 export default function Contact() {
     return (
-        <div className="bg-gray-100">
+        <div className="bg-white">
             <Head>
                 <title>Contact - Muhammad Zulfi Izzulhaq</title>
             </Head>

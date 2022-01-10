@@ -130,20 +130,20 @@ export default function Project() {
     ]
 
     return (
-        <div className="bg-gray-100">
+        <div className="bg-white">
             <Head>
                 <title>Project - Muhammad Zulfi Izzulhaq</title>
             </Head>
             <Header />
 
-            <div className="w-full grid sm:grid-cols-1 px-12 bg-gray-100">
-                <div className="container mx-auto">
+            <div className="w-full grid sm:grid-cols-1 px-12">
+                <div className="container mx-auto pt-12">
                     <div className="relative p-4">
 
                         {projects.reverse().map(function (item, index) {
-                            return <div key={index} className="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-12 lg:items-start my-8 bg-white p-8 rounded-lg shadow-md">
+                            return <div key={index} className="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-12 lg:items-start my-8 p-8">
                                 <div className="relative px-12 mb-4 w-full h-auto">
-                                    <Image src={'/projects/' + item.image} alt={item.name} width={400} height={200} quality={100} className="mx-auto shadow-lg rounded" />
+                                    <Image src={'/projects/' + item.image} alt={item.name} width={550} height={300} quality={100} className="mx-auto shadow-lg rounded" />
                                 </div>
                                 <div className="lg:max-w-2xl">
                                     <p className="text-base leading-6 text-indigo-500 font-semibold uppercase">
@@ -165,9 +165,9 @@ export default function Project() {
                                     <p className="mt-4 text-lg leading-6 text-gray-500 dark:text-gray-300">
                                         {item.description}
                                     </p>
-                                    <ul className="mt-8 md:grid md:grid-cols-2 gap-6">
+                                    <ul className="mt-4 md:grid md:grid-cols-2 gap-6">
                                         {item.tags.map((tag, indexTag) => {
-                                            return <li key={indexTag} className="mt-6 lg:mt-0">
+                                            return <li key={indexTag} className="mt-2 lg:mt-0">
                                             <div className="flex">
                                                 <span
                                                     className="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-green-100 text-green-800 dark:text-green-500 drark:bg-transparent"
