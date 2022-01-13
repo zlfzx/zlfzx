@@ -17,7 +17,7 @@ export default function Header() {
     const linkActiveMobile = linkMobile + ' font-bold'
 
     return (
-        <header className="h-16 sm:h-20 flex flex-col    z-30 w-full absolute">
+        <header className="h-16 sm:h-20 flex flex-col w-full absolute">
             <div className="container mx-auto px-6 py-4 flex items-center justify-between">
                 <div className="text-gray-700 dark:text-white font-medium text-3xl flex items-center">
                     <svg width="25" height="25" viewBox="0 0 1792 1792" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -41,13 +41,18 @@ export default function Header() {
                             </a>
                         </Link>
                         <Link href="/cv.pdf">
-                            <a className="py-2 px-6 flex hover:text-black">
+                            <a className="py-2 px-6 flex hover:text-black" target="_blank">
                             Resume
                             </a>
                         </Link>
                         <Link href="/contact">
                             <a className={router.pathname == '/contact' ? linkActive : link}>
                             Contact
+                            </a>
+                        </Link>
+                        <Link href="https://blog.zulfizz.my.id">
+                            <a className="py-2 px-6 flex hover:text-black" target='_blank'>
+                            Blog
                             </a>
                         </Link>
                     </nav>
@@ -74,13 +79,18 @@ export default function Header() {
                         </a>
                     </Link>
                     <Link href="/cv.pdf">
-                        <a className={linkMobile}>
+                        <a className={linkMobile} target="_blank">
                         Resume
                         </a>
                     </Link>
                     <Link href="/contact">
                         <a className={router.pathname== '/contact' ? linkActiveMobile : linkMobile}>
                         Contact
+                        </a>
+                    </Link>
+                    <Link href="https://blog.zulfizz.my.id">
+                        <a className={linkMobile} target="_blank">
+                        Blog
                         </a>
                     </Link>
                     </div>
