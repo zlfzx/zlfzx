@@ -25,7 +25,7 @@ export default function Header() {
                         </path>
                     </svg>
                     <span className="text-sm ml-3 mt-1 font-poppins">
-                        <a href="mailto:zulfi.izzulhaq@gmail.com">zulfi.izzulhaq@gmail.com</a>
+                        <a href="mailto:contact@zlfzx.xyz">contact@zlfzx.xyz</a>
                     </span>
                 </div>
                 <div className="flex items-center">
@@ -50,7 +50,7 @@ export default function Header() {
                             Contact
                             </a>
                         </Link>
-                        <Link href="https://blog.zulfizz.my.id">
+                        <Link href="https://blog.zlfzx.xyz">
                             <a className="py-2 px-6 flex hover:text-black" target='_blank'>
                             Blog
                             </a>
