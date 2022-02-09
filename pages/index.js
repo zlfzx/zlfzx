@@ -20,7 +20,7 @@ export default function Home() {
         <meta name="author" content="Muhammad Zulfi Izzulhaq" />
 
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://zlfzz.me/" />
+        <meta property="og:url" content="https://zlfzx.xyz/" />
         <meta property="og:title" content="Muhammad Zulfi Izzulhaq" />
         <meta property="og:description" content="I'm Muhammad Zulfi Izzulhaq, Backend Developer from Pekalongan, Indonesia" />
       </Head>

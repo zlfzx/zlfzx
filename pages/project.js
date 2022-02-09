@@ -153,6 +153,17 @@ export default function Project() {
         <div className="bg-white">
             <Head>
                 <title>Projects - Muhammad Zulfi Izzulhaq</title>
+                <meta name="description" content="I'm Muhammad Zulfi Izzulhaq, Backend Developer from Pekalongan, Indonesia" />
+                <meta name="keywords" content="developer,engineer,software,backend,frontend,laravel,react,vue" />
+                <meta name="robots" content="index, follow" />
+                <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+                <meta name="language" content="English" />
+                <meta name="author" content="Muhammad Zulfi Izzulhaq" />
+
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://zlfzx.xyz/" />
+                <meta property="og:title" content="Muhammad Zulfi Izzulhaq" />
+                <meta property="og:description" content="I'm Muhammad Zulfi Izzulhaq, Backend Developer from Pekalongan, Indonesia" />
             </Head>
             <Header />
 
@@ -172,7 +183,7 @@ export default function Project() {
                                     <h4 className="mt-2 text-2xl leading-8 font-extrabold text-gray-900 dark:text-white sm:text-3xl sm:leading-9">
                                         {item.name}
                                     </h4>
-                                    
+
                                     <div className="my-4">
                                         {!!item.preview ? <a href={`${item.preview}`} target="_blank" rel="noreferrer" className=" px-3 py-1 text-xs transition ease-in duration-200 uppercase rounded-full hover:bg-gray-800 hover:text-white border-2 border-gray-900 focus:outline-none mr-2">
                                             Preview
@@ -188,25 +199,25 @@ export default function Project() {
                                     <ul className="mt-4 md:grid md:grid-cols-2 gap-6">
                                         {item.tags.map((tag, indexTag) => {
                                             return <li key={indexTag} className="mt-2 lg:mt-0">
-                                            <div className="flex">
-                                                <span
-                                                    className="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-green-100 text-green-800 dark:text-green-500 drark:bg-transparent"
-                                                >
-                                                    <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
-                                                        <path
-                                                            fillRule="evenodd"
-                                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                                            clipRule="evenodd"
-                                                        ></path>
-                                                    </svg>
-                                                </span>
-                                                <span
-                                                    className="ml-4 text-base leading-6 font-medium text-gray-500 dark:text-gray-200"
-                                                >
-                                                    {tag}
-                                                </span>
-                                            </div>
-                                        </li>
+                                                <div className="flex">
+                                                    <span
+                                                        className="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-green-100 text-green-800 dark:text-green-500 drark:bg-transparent"
+                                                    >
+                                                        <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                                            <path
+                                                                fillRule="evenodd"
+                                                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                                                clipRule="evenodd"
+                                                            ></path>
+                                                        </svg>
+                                                    </span>
+                                                    <span
+                                                        className="ml-4 text-base leading-6 font-medium text-gray-500 dark:text-gray-200"
+                                                    >
+                                                        {tag}
+                                                    </span>
+                                                </div>
+                                            </li>
                                         })}
                                     </ul>
                                 </div>
@@ -215,7 +226,7 @@ export default function Project() {
                     </div>
                     <div className="flex justify-center mb-16">
                         <a href="https://github.com/zulfizz" target="_blank" rel="noreferrer" className="font-poppins px-6 py-2 transition ease-in duration-200 uppercase rounded-full hover:bg-gray-800 hover:text-white border-2 border-gray-900 focus:outline-none mr-5">More Project</a>
-                        
+
                         <a href="/cv.pdf" target="_blank" rel="noreferrer" className="font-poppins px-6 py-2 duration-200 uppercase rounded-full bg-gray-800 text-white">My Resume</a>
                     </div>
                 </div>
