@@ -25,7 +25,7 @@ export default function Header() {
                         </path>
                     </svg>
                     <span className="text-sm ml-3 mt-1 font-poppins">
-                        <a href="mailto:contact@zlfzx.xyz">contact@zlfzx.xyz</a>
+                        <a href="mailto:hi@zlfzx.xyz">hi@zlfzx.xyz</a>
                     </span>
                 </div>
                 <div className="flex items-center">
