@@ -1,11 +1,14 @@
 import admin from 'firebase-admin'
-import serviceAccount from './../firebase-adminsdk.json'
+
+const serviceAccount = JSON.parse(
+    process.env.FIREBASE_SERVICE_ACCOUNT
+)
 
 if (!admin.apps.length) {
     try {
         admin.initializeApp({
             credential: admin.credential.cert(serviceAccount),
-            databaseURL: 'https://zlfzx-xyz-default-rtdb.asia-southeast1.firebasedatabase.app'
+            databaseURL: process.env.FIREBASE_DATABASE_URL
         });
     } catch (e) {
         console.log('Firebase admin initialization error', e)
