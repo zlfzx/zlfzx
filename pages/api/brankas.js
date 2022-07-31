@@ -2,12 +2,21 @@ import firebase from '../../firebase'
 
 export default function handler(req, res) {
     const firestore = firebase.firestore()
-    
-    firestore.collection('brankas').add({
-        type: req.method,
-        body: req.body,
-        created_at: new Date().toString()
-    })
 
-    res.status(200).json(req.body)
+    let message = 'Only POST method will be stored in database'
+    
+    if (req.method == 'POST' && req.body) {
+        firestore.collection('brankas').add({
+            type: req.method,
+            body: req.body,
+            created_at: new Date().toString()
+        })
+        message = 'Successfully stored in database'
+    }
+
+    res.status(200).json({
+        status: 'success',
+        message: message,
+        data: req.body
+    })
 }
