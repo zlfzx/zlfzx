@@ -36,17 +36,17 @@ export default function MyJson() {
         <div className="bg-white">
             <Head>
                 <title>MyJSON - A simple JSON server</title>
-                <meta name="description" content="I'm Muhammad Zulfi Izzulhaq, Backend Developer from Pekalongan, Indonesia" />
-                <meta name="keywords" content="developer,engineer,software,backend,frontend,laravel,react,vue" />
+                <meta name="description" content="A simple JSON server" />
+                <meta name="keywords" content="json,json server,json hosting,developer,engineer,software,backend,frontend,laravel,react,vue" />
                 <meta name="robots" content="index, follow" />
                 <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
                 <meta name="language" content="English" />
                 <meta name="author" content="Muhammad Zulfi Izzulhaq" />
 
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://zlfzx.xyz/" />
-                <meta property="og:title" content="Muhammad Zulfi Izzulhaq" />
-                <meta property="og:description" content="I'm Muhammad Zulfi Izzulhaq, Backend Developer from Pekalongan, Indonesia" />
+                <meta property="og:url" content="https://zlfzx.xyz/myjson" />
+                <meta property="og:title" content="MyJSON - A simple JSON server" />
+                <meta property="og:description" content="A simple JSON server" />
             </Head>
             <div className="container w-full h-screen grid sm:grid-cols-1 mx-auto px-6">
                 <div className=" mx-auto flex flex-col items-start justify-center w-3/5">
