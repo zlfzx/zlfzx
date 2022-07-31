@@ -10,8 +10,6 @@ export default function MyJson() {
         }
 
         try {
-            let dd = JSON.parse(data.data)
-
             await fetch('/api/myjson', {
                 method: 'POST',
                 headers: {

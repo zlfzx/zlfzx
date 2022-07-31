@@ -22,7 +22,7 @@ export default function handler(req, res) {
                 created_at: new Date().toString()
             })
 
-            res.status(200).json({
+            return res.status(200).json({
                 status: 'success',
                 message: 'Successfully stored in database',
                 url: '/api/myjson/' + id
@@ -30,7 +30,7 @@ export default function handler(req, res) {
         }   
     }
 
-    res.status(200).json({
+    return res.status(200).json({
         status: 'failed',
         message: 'Only POST method will be stored in database'
     })
