@@ -5,9 +5,9 @@ export default function handler(req, res) {
 
     firestore.collection('brankas').add({
         type: req.method,
-        body: req.body,
-        params: req.params,
-        query: req.query,
+        body: req.body ?? null,
+        params: req.params ?? null,
+        query: req.query ?? null,
         created_at: new Date().toString()
     })
 
