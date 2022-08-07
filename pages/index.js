@@ -34,9 +34,14 @@ export default function Home() {
           <p className="font-poppins text-gray-700 text-xs lg:text-sm mt-5">
           Experienced as a Laravel Backend Developer for 2 years and interested in web development using PHP and Javascript Language. Based on this experience, I was able to adapt to the culture of working in a team or individually and build a character who is quick to learn new things.
           </p>
-          <Link href="/project">
-            <a className="font-poppins mt-6 px-6 py-2 transition ease-in duration-200 uppercase rounded-full hover:bg-gray-800 hover:text-white border-2 border-gray-900 focus:outline-none">See My Project</a>
-          </Link>
+          <div className="flex flex-row justify-center items-center mt-6">
+            <Link href="https://profile.zlfzx.xyz">
+              <a target="_blank" rel="noreferrer" className="font-poppins px-6 py-2 duration-200 uppercase rounded-full bg-gray-800 text-white border-2 border-gray-800 mr-4">Profile</a>
+            </Link>
+            <Link href="/project">
+              <a className="font-poppins px-6 py-2 transition ease-in duration-200 uppercase rounded-full hover:bg-gray-800 hover:text-white border-2 border-gray-900 focus:outline-none">Project</a>
+            </Link>
+          </div>
         </div>
         <FrontPageAnimation />
       </div>

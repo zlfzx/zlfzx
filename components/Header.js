@@ -35,16 +35,21 @@ export default function Header() {
                             Home
                             </a>
                         </Link>
+                        <Link href="https://profile.zlfzx.xyz">
+                            <a className="py-2 px-6 flex hover:text-black" target="_blank">
+                            Profile
+                            </a>
+                        </Link>
                         <Link href="/project">
                             <a className={router.pathname == '/project' ? linkActive : link}>
                                 Project
                             </a>
                         </Link>
-                        <Link href="/cv.pdf">
+                        {/* <Link href="/cv.pdf">
                             <a className="py-2 px-6 flex hover:text-black" target="_blank">
                             Resume
                             </a>
-                        </Link>
+                        </Link> */}
                         <Link href="/contact">
                             <a className={router.pathname == '/contact' ? linkActive : link}>
                             Contact
@@ -73,16 +78,21 @@ export default function Header() {
                         Home
                         </a>
                     </Link>
+                    <Link href="https://profile.zlfzx.xyz">
+                        <a className={linkMobile} target="_blank">
+                        Profile
+                        </a>
+                    </Link>
                     <Link href="/project">
                         <a className={router.pathname== '/project' ? linkActiveMobile : linkMobile}>
                         Project
                         </a>
                     </Link>
-                    <Link href="/cv.pdf">
+                    {/* <Link href="/cv.pdf">
                         <a className={linkMobile} target="_blank">
                         Resume
                         </a>
-                    </Link>
+                    </Link> */}
                     <Link href="/contact">
                         <a className={router.pathname== '/contact' ? linkActiveMobile : linkMobile}>
                         Contact
