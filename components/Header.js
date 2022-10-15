@@ -17,7 +17,7 @@ export default function Header() {
     const linkActiveMobile = linkMobile + ' font-bold'
 
     return (
-        <header className="h-16 sm:h-20 flex flex-col w-full absolute">
+        <header className="h-16 sm:h-20 flex flex-col w-full absolute z-50">
             <div className="container mx-auto px-6 py-4 flex items-center justify-between">
                 <div className="text-gray-700 dark:text-white font-medium text-3xl flex items-center">
                     <svg width="25" height="25" viewBox="0 0 1792 1792" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -25,7 +25,7 @@ export default function Header() {
                         </path>
                     </svg>
                     <span className="text-sm ml-3 mt-1 font-poppins">
-                        <a href="mailto:hi@zlfzx.xyz">hi@zlfzx.xyz</a>
+                        <a href="mailto:zulfi.izzulhaq@gmail.com">zulfi.izzulhaq@gmail.com</a>
                     </span>
                 </div>
                 <div className="flex items-center">

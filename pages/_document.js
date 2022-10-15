@@ -16,7 +16,7 @@ class MyDocument extends Document {
           <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap" rel="stylesheet" />
           <link rel="icon" href="/favicon.ico" />
           
-          <meta name="description" content="I'm Muhammad Zulfi Izzulhaq, Backend Developer from Pekalongan, Indonesia" />
+          <meta name="description" content="Experienced as a Laravel Backend Developer for 3 years and interested in web development using PHP and Javascript" />
           <meta name="keywords" content="developer,engineer,software,backend,frontend,laravel,react,vue" />
           <meta name="robots" content="index, follow" />
           <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
@@ -26,7 +26,7 @@ class MyDocument extends Document {
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://zlfzx.xyz/" />
           <meta property="og:title" content="Muhammad Zulfi Izzulhaq" />
-          <meta property="og:description" content="I'm Muhammad Zulfi Izzulhaq, Backend Developer from Pekalongan, Indonesia" />
+          <meta property="og:description" content="Experienced as a Laravel Backend Developer for 3 years and interested in web development using PHP and Javascript" />
           <script
             async
             src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}

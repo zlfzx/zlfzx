@@ -29,7 +29,7 @@ export default function Contact() {
             <Header />
             <div className="container w-full h-screen grid sm:grid-cols-1 mx-auto px-6">
                 <div className="w-full  mx-auto flex flex-row items-center justify-center gap-8">
-                    <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-5xl font-poppins text-gray-800">Want to connect with me?</h1>
+                    <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-5xl font-poppins text-gray-800">Scan to connect with me 👉</h1>
                     <Image
                         src={QRCode}
                         alt='QRCode'
