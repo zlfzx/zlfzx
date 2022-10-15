@@ -180,7 +180,7 @@ export default function Project() {
                                     <p className="text-base leading-6 text-indigo-500 font-semibold uppercase">
                                         {item.platform} {!!item.role ? '- ' + item.role : ''}
                                     </p>
-                                    <h4 className="mt-2 text-2xl leading-8 font-extrabold text-gray-900 dark:text-white sm:text-3xl sm:leading-9">
+                                    <h4 className="mt-2 text-2xl leading-8 font-extrabold text-gray-900 sm:text-3xl sm:leading-9">
                                         {item.name}
                                     </h4>
 
@@ -193,7 +193,7 @@ export default function Project() {
                                         </a> : ''}
                                     </div>
 
-                                    <p className="mt-4 text-lg leading-6 text-gray-500 dark:text-gray-300">
+                                    <p className="mt-4 text-lg leading-6 text-gray-500">
                                         {item.description}
                                     </p>
                                     <ul className="mt-4 md:grid md:grid-cols-2 gap-6">
@@ -201,7 +201,7 @@ export default function Project() {
                                             return <li key={indexTag} className="mt-2 lg:mt-0">
                                                 <div className="flex">
                                                     <span
-                                                        className="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-green-100 text-green-800 dark:text-green-500 drark:bg-transparent"
+                                                        className="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-green-100 text-green-800"
                                                     >
                                                         <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
                                                             <path
@@ -212,7 +212,7 @@ export default function Project() {
                                                         </svg>
                                                     </span>
                                                     <span
-                                                        className="ml-4 text-base leading-6 font-medium text-gray-500 dark:text-gray-200"
+                                                        className="ml-4 text-base leading-6 font-medium text-gray-500"
                                                     >
                                                         {tag}
                                                     </span>
