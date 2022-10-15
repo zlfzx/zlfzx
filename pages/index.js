@@ -13,6 +13,7 @@ export default function Home() {
     <div className="bg-white">
       <Head>
         <title>Muhammad Zulfi Izzulhaq</title>
+        <meta name="title" content="Muhammad Zulfi Izzulhaq" />
         <meta name="description" content="Experienced as a Laravel Backend Developer for 3 years and interested in web development using PHP and Javascript" />
         <meta name="keywords" content="developer,engineer,software,backend,frontend,laravel,react,vue" />
         <meta name="robots" content="index, follow" />
@@ -35,7 +36,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      
+
       {/* <div className="container w-full h-screen grid lg:grid-cols-2 sm:grid-cols-1 mx-auto px-6">
         <DevAnimation />
         <div className="flex flex-col justify-center items-start">

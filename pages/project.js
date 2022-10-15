@@ -153,7 +153,8 @@ export default function Project() {
         <div className="bg-white">
             <Head>
                 <title>Projects - Muhammad Zulfi Izzulhaq</title>
-                <meta name="description" content="I'm Muhammad Zulfi Izzulhaq, Backend Developer from Pekalongan, Indonesia" />
+                <meta name="title" content="Projects - Muhammad Zulfi Izzulhaq" />
+                <meta name="description" content="Experienced as a Laravel Backend Developer for 3 years and interested in web development using PHP and Javascript" />
                 <meta name="keywords" content="developer,engineer,software,backend,frontend,laravel,react,vue" />
                 <meta name="robots" content="index, follow" />
                 <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
@@ -161,9 +162,9 @@ export default function Project() {
                 <meta name="author" content="Muhammad Zulfi Izzulhaq" />
 
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://zlfzx.xyz/" />
-                <meta property="og:title" content="Muhammad Zulfi Izzulhaq" />
-                <meta property="og:description" content="I'm Muhammad Zulfi Izzulhaq, Backend Developer from Pekalongan, Indonesia" />
+                <meta property="og:url" content="https://zlfzx.xyz/project" />
+                <meta property="og:title" content="Projects - Muhammad Zulfi Izzulhaq" />
+                <meta property="og:description" content="Experienced as a Laravel Backend Developer for 3 years and interested in web development using PHP and Javascript" />
             </Head>
             <Header />
 
