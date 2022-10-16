@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Header from '../components/Header'
 
 export default function MyJson() {
 
@@ -46,6 +47,9 @@ export default function MyJson() {
                 <meta property="og:title" content="MyJSON - A simple JSON server" />
                 <meta property="og:description" content="A simple JSON server" />
             </Head>
+
+            <Header/>
+
             <div className="container w-full h-screen grid sm:grid-cols-1 mx-auto px-6">
                 <div className=" mx-auto flex flex-col items-start justify-center w-3/5">
                     <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-5xl font-poppins text-gray-800">MY JSON</h1>

@@ -60,6 +60,11 @@ export default function Header() {
                             Blog
                             </a>
                         </Link>
+                        <Link href="/myjson">
+                            <a className={router.pathname == '/myjson' ? linkActive : link}>
+                            MyJson
+                            </a>
+                        </Link>
                     </nav>
                     <button className="lg:hidden flex flex-col ml-4" aria-label="Menu" onClick={showNavbar}>
                         <span className="w-6 h-1 bg-gray-800">
@@ -101,6 +106,11 @@ export default function Header() {
                     <Link href="https://blog.zulfizz.my.id">
                         <a className={linkMobile} target="_blank">
                         Blog
+                        </a>
+                    </Link>
+                    <Link href="/myjson">
+                        <a className={router.pathname == '/myjson' ? linkActive : link}>
+                        MyJson
                         </a>
                     </Link>
                     </div>
