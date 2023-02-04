@@ -15,7 +15,7 @@ export default function Contact() {
                 <title>Contact - Muhammad Zulfi Izzulhaq</title>
                 <meta name="title" content="Contact - Muhammad Zulfi Izzulhaq" />
                 <meta name="description" content="Experienced as a Laravel Backend Developer for 3 years and interested in web development using PHP and Javascript" />
-                <meta name="keywords" content="developer,engineer,software,backend,frontend,laravel,react,vue" />
+                <meta name="keywords" content="developer,engineer,software,backend,php,javascript,go,laravel,codeigniter,frontend,react,vue" />
                 <meta name="robots" content="index, follow" />
                 <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
                 <meta name="language" content="English" />
@@ -30,7 +30,7 @@ export default function Contact() {
             <Header />
             <div className="container w-full h-screen grid sm:grid-cols-1 mx-auto px-6">
                 <div className="w-full  mx-auto flex flex-row items-center justify-center gap-8">
-                    <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-5xl font-poppins text-gray-800">Scan to connect with me 👉</h1>
+                    <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-5xl font-poppins text-gray-800">Let&apos;s connect with me 👉</h1>
                     <Image
                         src={QRCode}
                         alt='QRCode'

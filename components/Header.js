@@ -30,40 +30,28 @@ export default function Header() {
                 </div>
                 <div className="flex items-center">
                     <nav className="font-poppins font-medium text-gray-700 text-lg lg:flex items-center hidden">
-                        <Link href="/">
-                            <a className={router.pathname == '/' ? linkActive : link}>
+                        <Link href="/" className={router.pathname == '/' ? linkActive : link}>
                             Home
-                            </a>
                         </Link>
-                        <Link href="https://profile.zlfzx.xyz">
-                            <a className="py-2 px-6 flex hover:text-black" target="_blank">
+                        <Link href="https://profile.zlfzx.xyz" className="py-2 px-6 flex hover:text-black" target="_blank">
                             Profile
-                            </a>
                         </Link>
-                        <Link href="/project">
-                            <a className={router.pathname == '/project' ? linkActive : link}>
+                        <Link href="/project" className={router.pathname == '/project' ? linkActive : link}>
                                 Project
-                            </a>
                         </Link>
                         {/* <Link href="/cv.pdf">
                             <a className="py-2 px-6 flex hover:text-black" target="_blank">
                             Resume
                             </a>
                         </Link> */}
-                        <Link href="/contact">
-                            <a className={router.pathname == '/contact' ? linkActive : link}>
+                        <Link href="/contact" className={router.pathname == '/contact' ? linkActive : link}>
                             Contact
-                            </a>
                         </Link>
-                        <Link href="https://blog.zlfzx.xyz">
-                            <a className="py-2 px-6 flex hover:text-black" target='_blank'>
+                        {/* <Link href="https://blog.zlfzx.xyz" className="py-2 px-6 flex hover:text-black" target='_blank'>
                             Blog
-                            </a>
-                        </Link>
-                        <Link href="/myjson">
-                            <a className={router.pathname == '/myjson' ? linkActive : link}>
+                        </Link> */}
+                        <Link href="/myjson" className={router.pathname == '/myjson' ? linkActive : link}>
                             MyJson
-                            </a>
                         </Link>
                     </nav>
                     <button className="lg:hidden flex flex-col ml-4" aria-label="Menu" onClick={showNavbar}>
@@ -78,108 +66,31 @@ export default function Header() {
             </div>
             <div className={`${show ? '' : 'hidden'} lg:hidden bg-white`}>
                 <div className="container mx-auto pb-4 space-y-1 sm:px-3 text-right font-poppins font-medium text-gray-700 shadow-lg">
-                    <Link href="/">
-                        <a className={router.pathname== '/' ? linkActiveMobile : linkMobile}>
+                    <Link href="/" className={router.pathname== '/' ? linkActiveMobile : linkMobile}>
                         Home
-                        </a>
                     </Link>
-                    <Link href="https://profile.zlfzx.xyz">
-                        <a className={linkMobile} target="_blank">
+                    <Link href="https://profile.zlfzx.xyz"  className={linkMobile} target="_blank">
                         Profile
-                        </a>
                     </Link>
-                    <Link href="/project">
-                        <a className={router.pathname== '/project' ? linkActiveMobile : linkMobile}>
+                    <Link href="/project" className={router.pathname== '/project' ? linkActiveMobile : linkMobile}>
                         Project
-                        </a>
                     </Link>
                     {/* <Link href="/cv.pdf">
                         <a className={linkMobile} target="_blank">
                         Resume
                         </a>
                     </Link> */}
-                    <Link href="/contact">
-                        <a className={router.pathname== '/contact' ? linkActiveMobile : linkMobile}>
+                    <Link href="/contact" className={router.pathname== '/contact' ? linkActiveMobile : linkMobile}>
                         Contact
-                        </a>
                     </Link>
-                    <Link href="https://blog.zulfizz.my.id">
-                        <a className={linkMobile} target="_blank">
+                    {/* <Link href="https://blog.zulfizz.my.id" className={linkMobile} target="_blank">
                         Blog
-                        </a>
-                    </Link>
-                    <Link href="/myjson">
-                        <a className={router.pathname == '/myjson' ? linkActive : link}>
+                    </Link> */}
+                    <Link href="/myjson" className={router.pathname == '/myjson' ? linkActive : link}>
                         MyJson
-                        </a>
                     </Link>
                     </div>
             </div>
         </header>
     )
-
-    // return (
-    //     <header>
-    //         <nav className="bg-white shadow ">
-    //             <div className="max-w-7xl mx-auto px-8">
-    //                 <div className="flex items-center justify-between h-16">
-    //                     <div className=" flex items-center">
-    //                         <div className="hidden md:block">
-    //                             <div className="ml-10 flex items-baseline space-x-4">
-    //                                 <Link className="text-gray-300  hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium" href="/#">
-    //                                     Home
-    //                                 </Link>
-    //                                 <Link className="text-gray-800  hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium" href="/#">
-    //                                     Gallery
-    //                                 </Link>
-    //                                 <Link className="text-gray-300  hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium" href="/#">
-    //                                     Content
-    //                                 </Link>
-    //                                 <Link className="text-gray-300  hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium" href="/#">
-    //                                     Contact
-    //                                 </Link>
-    //                             </div>
-    //                         </div>
-    //                     </div>
-    //                     <div className="block">
-    //                         <div className="ml-4 flex items-center md:ml-6">
-    //                         </div>
-    //                     </div>
-    //                     <div className="-mr-2 flex md:hidden">
-    //                         <button className="text-gray-800 hover:text-gray-300 inline-flex items-center justify-center p-2 rounded-md focus:outline-none">
-    //                             <svg width="20" height="20" fill="currentColor" className="h-8 w-8" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
-    //                                 <path d="M1664 1344v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45z">
-    //                                 </path>
-    //                             </svg>
-    //                         </button>
-    //                     </div>
-    //                 </div>
-    //             </div>
-    //             <div className="md:hidden">
-    //                 <div className="container mx-auto px-6 pt-2 pb-3 space-y-1 sm:px-3 text-right">
-    //                     <Link href="/">
-    //                         <a className="text-gray-300 hover:text-gray-800 block px-3 py-2 rounded-md text-base font-medium">
-    //                         Home
-    //                         </a>
-    //                     </Link>
-    //                     <Link href="/">
-    //                         <a className="text-gray-800 block px-3 py-2 rounded-md text-base font-medium">
-    //                         Gallery
-    //                         </a>
-    //                     </Link>
-    //                     <Link href="/">
-    //                         <a className="text-gray-300 hover:text-gray-800 block px-3 py-2 rounded-md text-base font-medium">
-    //                         Content
-    //                         </a>
-    //                     </Link>
-    //                     <Link href="/">
-    //                         <a className="text-gray-300 hover:text-gray-800 block px-3 py-2 rounded-md text-base font-medium">
-    //                         Contact
-    //                         </a>
-    //                     </Link>
-    //                 </div>
-    //             </div>
-    //         </nav>
-    //     </header>
-    // )
 }

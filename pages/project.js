@@ -155,7 +155,7 @@ export default function Project() {
                 <title>Projects - Muhammad Zulfi Izzulhaq</title>
                 <meta name="title" content="Projects - Muhammad Zulfi Izzulhaq" />
                 <meta name="description" content="Experienced as a Laravel Backend Developer for 3 years and interested in web development using PHP and Javascript" />
-                <meta name="keywords" content="developer,engineer,software,backend,frontend,laravel,react,vue" />
+                <meta name="keywords" content="developer,engineer,software,backend,php,javascript,go,laravel,codeigniter,frontend,react,vue" />
                 <meta name="robots" content="index, follow" />
                 <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
                 <meta name="language" content="English" />
@@ -226,9 +226,9 @@ export default function Project() {
                         })}
                     </div>
                     <div className="flex justify-center mb-16">
-                        <a href="https://github.com/zulfizz" target="_blank" rel="noreferrer" className="font-poppins px-6 py-2 transition ease-in duration-200 uppercase rounded-full hover:bg-gray-800 hover:text-white border-2 border-gray-900 focus:outline-none mr-5">More Project</a>
+                        <a href="https://github.com/zlfzx" target="_blank" rel="noreferrer" className="font-poppins px-6 py-2 transition ease-in duration-200 uppercase rounded-full hover:bg-gray-800 hover:text-white border-2 border-gray-900 focus:outline-none mr-5">More Project</a>
 
-                        <a href="/cv.pdf" target="_blank" rel="noreferrer" className="font-poppins px-6 py-2 duration-200 uppercase rounded-full bg-gray-800 text-white">My Resume</a>
+                        {/* <a href="/cv.pdf" target="_blank" rel="noreferrer" className="font-poppins px-6 py-2 duration-200 uppercase rounded-full bg-gray-800 text-white">My Resume</a> */}
                     </div>
                 </div>
             </div>

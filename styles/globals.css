@@ -1,35 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.BrainhubCarouselItem {
-  padding-top: 40px;
-  opacity: 35%;
-}
-
-.BrainhubCarouselItem--active {
-  z-index: 999;
-  /* padding: 0 !important; */
-  padding-bottom: 40px;
-  opacity: 100% !important;
-}
-.BrainhubCarouselItem--active > div {
-  height: 100%;
-}

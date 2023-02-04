@@ -1,9 +1,9 @@
-import { useRouter } from 'next/router'
+import '@/styles/globals.css'
 import { useEffect } from 'react'
-import '../styles/globals.css'
+import { useRouter } from 'next/router'
 import * as ga from '../lib/ga'
 
-function MyApp({ Component, pageProps }) {
+export default function App({ Component, pageProps }) {
   const router = useRouter()
 
   useEffect(() => {
@@ -17,9 +17,6 @@ function MyApp({ Component, pageProps }) {
       router.events.off('routeChangeComplete', handleRouteChange)
     }
 
-  }, [router.events])      
-
+  }, [router.events])
   return <Component {...pageProps} />
 }
-
-export default MyApp
