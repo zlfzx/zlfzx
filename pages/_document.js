@@ -11,7 +11,7 @@ export default function Document() {
           
           <meta name="title" content="Muhammad Zulfi Izzulhaq" />
           <meta name="description" content="Experienced as a Laravel Backend Developer for 3 years and interested in web development using PHP and Javascript" />
-          <meta name="keywords" content="developer,engineer,software,backend,php,javascript,go,laravel,codeigniter,frontend,react,vue" />
+          <meta name="keywords" content="developer,engineer,software,backend,php,javascript,go,laravel,codeigniter,frontend,react,vue,zlfzx" />
           <meta name="robots" content="index, follow" />
           <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
           <meta name="language" content="English" />

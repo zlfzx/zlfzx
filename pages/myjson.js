@@ -36,7 +36,7 @@ export default function MyJson() {
             <Head>
                 <title>MyJSON - A simple JSON server</title>
                 <meta name="description" content="A simple JSON server" />
-                <meta name="keywords" content="json,json server,json hosting,developer,engineer,software,backend,frontend,laravel,react,vue" />
+                <meta name="keywords" content="json,json server,json hosting,developer,engineer,software,backend,frontend,laravel,react,vue,zlfzx" />
                 <meta name="robots" content="index, follow" />
                 <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
                 <meta name="language" content="English" />

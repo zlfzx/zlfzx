@@ -47,9 +47,9 @@ export default function Header() {
                         <Link href="/contact" className={router.pathname == '/contact' ? linkActive : link}>
                             Contact
                         </Link>
-                        {/* <Link href="https://blog.zlfzx.xyz" className="py-2 px-6 flex hover:text-black" target='_blank'>
+                        <Link href="https://blog.zlfzx.xyz" className="py-2 px-6 flex hover:text-black" target='_blank'>
                             Blog
-                        </Link> */}
+                        </Link>
                         <Link href="/myjson" className={router.pathname == '/myjson' ? linkActive : link}>
                             MyJson
                         </Link>
@@ -66,13 +66,13 @@ export default function Header() {
             </div>
             <div className={`${show ? '' : 'hidden'} lg:hidden bg-white`}>
                 <div className="container mx-auto pb-4 space-y-1 sm:px-3 text-right font-poppins font-medium text-gray-700 shadow-lg">
-                    <Link href="/" className={router.pathname== '/' ? linkActiveMobile : linkMobile}>
+                    <Link href="/" className={router.pathname == '/' ? linkActiveMobile : linkMobile}>
                         Home
                     </Link>
                     <Link href="https://profile.zlfzx.xyz"  className={linkMobile} target="_blank">
                         Profile
                     </Link>
-                    <Link href="/project" className={router.pathname== '/project' ? linkActiveMobile : linkMobile}>
+                    <Link href="/project" className={router.pathname == '/project' ? linkActiveMobile : linkMobile}>
                         Project
                     </Link>
                     {/* <Link href="/cv.pdf">
@@ -80,12 +80,12 @@ export default function Header() {
                         Resume
                         </a>
                     </Link> */}
-                    <Link href="/contact" className={router.pathname== '/contact' ? linkActiveMobile : linkMobile}>
+                    <Link href="/contact" className={router.pathname == '/contact' ? linkActiveMobile : linkMobile}>
                         Contact
                     </Link>
-                    {/* <Link href="https://blog.zulfizz.my.id" className={linkMobile} target="_blank">
+                    <Link href="https://blog.zlfzx.xyz" className={linkMobile} target="_blank">
                         Blog
-                    </Link> */}
+                    </Link>
                     <Link href="/myjson" className={router.pathname == '/myjson' ? linkActive : link}>
                         MyJson
                     </Link>
