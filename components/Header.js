@@ -50,9 +50,12 @@ export default function Header() {
                         <Link href="https://blog.zlfzx.xyz" className="py-2 px-6 flex hover:text-black" target='_blank'>
                             Blog
                         </Link>
-                        <Link href="/myjson" className={router.pathname == '/myjson' ? linkActive : link}>
+                        <Link href="https://json.zlfzx.xyz" className="py-2 px-6 flex hover:text-black" target='_blank'>
                             MyJson
                         </Link>
+                        {/* <Link href="/myjson" className={router.pathname == '/myjson' ? linkActive : link}>
+                            MyJson
+                        </Link> */}
                     </nav>
                     <button className="lg:hidden flex flex-col ml-4" aria-label="Menu" onClick={showNavbar}>
                         <span className="w-6 h-1 bg-gray-800">
