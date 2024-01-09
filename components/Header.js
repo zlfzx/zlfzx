@@ -69,12 +69,12 @@ export default function Header() {
                     <Link href="/" className={router.pathname == '/' ? linkActiveMobile : linkMobile}>
                         Home
                     </Link>
-                    <Link href="https://profile.zlfzx.xyz"  className={linkMobile} target="_blank">
+                    {/* <Link href="https://profile.zlfzx.xyz"  className={linkMobile} target="_blank">
                         Profile
                     </Link>
                     <Link href="/project" className={router.pathname == '/project' ? linkActiveMobile : linkMobile}>
                         Project
-                    </Link>
+                    </Link> */}
                     {/* <Link href="/cv.pdf">
                         <a className={linkMobile} target="_blank">
                         Resume
@@ -83,12 +83,12 @@ export default function Header() {
                     <Link href="/contact" className={router.pathname == '/contact' ? linkActiveMobile : linkMobile}>
                         Contact
                     </Link>
-                    <Link href="https://blog.zlfzx.xyz" className={linkMobile} target="_blank">
+                    {/* <Link href="https://blog.zlfzx.xyz" className={linkMobile} target="_blank">
                         Blog
                     </Link>
                     <Link href="https://json.zlfzx.xyz" className={linkMobile} target="_blank">
                         MyJson
-                    </Link>
+                    </Link> */}
                     </div>
             </div>
         </header>
