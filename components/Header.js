@@ -33,12 +33,12 @@ export default function Header() {
                         <Link href="/" className={router.pathname == '/' ? linkActive : link}>
                             Home
                         </Link>
-                        <Link href="https://profile.zlfzx.xyz" className="py-2 px-6 flex hover:text-black" target="_blank">
+                        {/* <Link href="https://profile.zlfzx.xyz" className="py-2 px-6 flex hover:text-black" target="_blank">
                             Profile
                         </Link>
                         <Link href="/project" className={router.pathname == '/project' ? linkActive : link}>
                                 Project
-                        </Link>
+                        </Link> */}
                         {/* <Link href="/cv.pdf">
                             <a className="py-2 px-6 flex hover:text-black" target="_blank">
                             Resume
@@ -47,12 +47,12 @@ export default function Header() {
                         <Link href="/contact" className={router.pathname == '/contact' ? linkActive : link}>
                             Contact
                         </Link>
-                        <Link href="https://blog.zlfzx.xyz" className="py-2 px-6 flex hover:text-black" target='_blank'>
+                        {/* <Link href="https://blog.zlfzx.xyz" className="py-2 px-6 flex hover:text-black" target='_blank'>
                             Blog
                         </Link>
                         <Link href="https://json.zlfzx.xyz" className="py-2 px-6 flex hover:text-black" target='_blank'>
                             MyJson
-                        </Link>
+                        </Link> */}
                     </nav>
                     <button className="lg:hidden flex flex-col ml-4" aria-label="Menu" onClick={showNavbar}>
                         <span className="w-6 h-1 bg-gray-800">
